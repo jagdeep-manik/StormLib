@@ -495,11 +495,7 @@
 		93FA7919205A4BD800F29E8A /* (8)AzerothGrandPrix.w3x in Resources */ = {isa = PBXBuildFile; fileRef = 93FA7918205A4BD800F29E8A /* (8)AzerothGrandPrix.w3x */; };
 		93FA791B205A57B700F29E8A /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D20A8A0CF3902D00230E7A /* libbz2.dylib */; };
 		93FA791C205A57BA00F29E8A /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D20A8B0CF3902D00230E7A /* libz.dylib */; };
-		93FA791E205AF86500F29E8A /* testExtractionCorrect.j in Resources */ = {isa = PBXBuildFile; fileRef = 93FA791D205AF86500F29E8A /* testExtractionCorrect.j */; };
-		93FA7921205B13B200F29E8A /* StormFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 93FA791F205B13B200F29E8A /* StormFile.h */; };
-		93FA7922205B13B200F29E8A /* StormFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 93FA791F205B13B200F29E8A /* StormFile.h */; };
-		93FA7923205B13B200F29E8A /* StormFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = 93FA7920205B13B200F29E8A /* StormFile.mm */; };
-		93FA7924205B13B200F29E8A /* StormFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = 93FA7920205B13B200F29E8A /* StormFile.mm */; };
+		93FA791E205AF86500F29E8A /* testReferenceScript.j in Resources */ = {isa = PBXBuildFile; fileRef = 93FA791D205AF86500F29E8A /* testReferenceScript.j */; };
 		E60816D61B707A9000B283F7 /* rsa_sign_hash.c in Sources */ = {isa = PBXBuildFile; fileRef = E60816D51B707A9000B283F7 /* rsa_sign_hash.c */; };
 		E60816D71B707A9B00B283F7 /* rsa_sign_hash.c in Sources */ = {isa = PBXBuildFile; fileRef = E60816D51B707A9000B283F7 /* rsa_sign_hash.c */; };
 		E60816D91B707B1800B283F7 /* pkcs_1_pss_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = E60816D81B707B1800B283F7 /* pkcs_1_pss_encode.c */; };
@@ -804,9 +800,7 @@
 		93FA790C205A4B6C00F29E8A /* StormTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StormTests.m; sourceTree = "<group>"; };
 		93FA790E205A4B6C00F29E8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		93FA7918205A4BD800F29E8A /* (8)AzerothGrandPrix.w3x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "(8)AzerothGrandPrix.w3x"; sourceTree = "<group>"; };
-		93FA791D205AF86500F29E8A /* testExtractionCorrect.j */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testExtractionCorrect.j; sourceTree = "<group>"; };
-		93FA791F205B13B200F29E8A /* StormFile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StormFile.h; sourceTree = "<group>"; };
-		93FA7920205B13B200F29E8A /* StormFile.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = StormFile.mm; sourceTree = "<group>"; };
+		93FA791D205AF86500F29E8A /* testReferenceScript.j */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testReferenceScript.j; sourceTree = "<group>"; };
 		E60816D51B707A9000B283F7 /* rsa_sign_hash.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = rsa_sign_hash.c; sourceTree = "<group>"; };
 		E60816D81B707B1800B283F7 /* pkcs_1_pss_encode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pkcs_1_pss_encode.c; sourceTree = "<group>"; };
 		E60816DB1B707B2700B283F7 /* pkcs_1_v1_5_encode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pkcs_1_v1_5_encode.c; sourceTree = "<group>"; };
@@ -1332,8 +1326,6 @@
 			children = (
 				93FA78FD205A472700F29E8A /* StormArchive.h */,
 				93FA78FE205A472700F29E8A /* StormArchive.mm */,
-				93FA791F205B13B200F29E8A /* StormFile.h */,
-				93FA7920205B13B200F29E8A /* StormFile.mm */,
 			);
 			path = objc;
 			sourceTree = "<group>";
@@ -1352,7 +1344,7 @@
 			isa = PBXGroup;
 			children = (
 				93FA7918205A4BD800F29E8A /* (8)AzerothGrandPrix.w3x */,
-				93FA791D205AF86500F29E8A /* testExtractionCorrect.j */,
+				93FA791D205AF86500F29E8A /* testReferenceScript.j */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1393,7 +1385,6 @@
 				22C9188711933FCF0083AC69 /* tomcrypt_macros.h in Headers */,
 				93FA78FF205A472700F29E8A /* StormArchive.h in Headers */,
 				22C9188811933FCF0083AC69 /* tomcrypt_math.h in Headers */,
-				93FA7921205B13B200F29E8A /* StormFile.h in Headers */,
 				22C9188911933FCF0083AC69 /* tomcrypt_misc.h in Headers */,
 				22C9188A11933FCF0083AC69 /* tomcrypt_pk.h in Headers */,
 				22C9188B11933FCF0083AC69 /* tomcrypt_pkcs.h in Headers */,
@@ -1432,7 +1423,6 @@
 				22C918D111933FCF0083AC69 /* tomcrypt_macros.h in Headers */,
 				93FA7900205A472700F29E8A /* StormArchive.h in Headers */,
 				22C918D211933FCF0083AC69 /* tomcrypt_math.h in Headers */,
-				93FA7922205B13B200F29E8A /* StormFile.h in Headers */,
 				22C918D311933FCF0083AC69 /* tomcrypt_misc.h in Headers */,
 				22C918D411933FCF0083AC69 /* tomcrypt_pk.h in Headers */,
 				22C918D511933FCF0083AC69 /* tomcrypt_pkcs.h in Headers */,
@@ -1566,7 +1556,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				93FA7919205A4BD800F29E8A /* (8)AzerothGrandPrix.w3x in Resources */,
-				93FA791E205AF86500F29E8A /* testExtractionCorrect.j in Resources */,
+				93FA791E205AF86500F29E8A /* testReferenceScript.j in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1614,7 +1604,6 @@
 				22C9189411933FCF0083AC69 /* crypt_hash_descriptor.c in Sources */,
 				22C9189511933FCF0083AC69 /* crypt_hash_is_valid.c in Sources */,
 				22C9189611933FCF0083AC69 /* crypt_libc.c in Sources */,
-				93FA7923205B13B200F29E8A /* StormFile.mm in Sources */,
 				2254917B11948CE70044424D /* crypt_ltc_mp_descriptor.c in Sources */,
 				22C9189811933FCF0083AC69 /* crypt_prng_descriptor.c in Sources */,
 				22C9189911933FCF0083AC69 /* crypt_prng_is_valid.c in Sources */,
@@ -1847,7 +1836,6 @@
 				22C918DE11933FCF0083AC69 /* crypt_hash_descriptor.c in Sources */,
 				22C918DF11933FCF0083AC69 /* crypt_hash_is_valid.c in Sources */,
 				22C918E011933FCF0083AC69 /* crypt_libc.c in Sources */,
-				93FA7924205B13B200F29E8A /* StormFile.mm in Sources */,
 				22C918E111933FCF0083AC69 /* crypt_ltc_mp_descriptor.c in Sources */,
 				22C918E211933FCF0083AC69 /* crypt_prng_descriptor.c in Sources */,
 				22C918E311933FCF0083AC69 /* crypt_prng_is_valid.c in Sources */,

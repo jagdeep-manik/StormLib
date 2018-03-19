@@ -12,7 +12,7 @@
 
 @interface StormArchive ()
 
-
+@property (nonatomic) void *mpq;
 
 @end
 
@@ -39,19 +39,6 @@
     return self;
 }
 
-#pragma mark - Archive Properties
-
-- (NSString *)archivePath:(NSError **)error
-{
-    NSData *archiveNameBuffer = [self fileInfo:self.mpq infoClass:SFileMpqFileName error:error];
-    if (archiveNameBuffer == nil)
-    {
-        return nil;
-    }
-    
-    return [[NSString alloc] initWithData:archiveNameBuffer encoding:NSUTF8StringEncoding];
-}
-
 #pragma mark - File Management
 
 - (BOOL)hasFile:(NSString *)filePath error:(NSError **)error
@@ -72,7 +59,7 @@
     return isFileInArchive;
 }
 
-- (BOOL)extract:(NSString *)pathInArchive pathOnDisk:(NSString *)pathOnDisk error:(NSError **)error
+- (BOOL)extractFile:(NSString *)pathInArchive pathOnDisk:(NSString *)pathOnDisk error:(NSError **)error
 {
     const char *utf8FilePath = [pathInArchive UTF8String];
     const char *utf8DiskPath = [pathOnDisk UTF8String];
@@ -91,7 +78,48 @@
     return YES;
 }
 
-#pragma mark - File Properties
+- (NSData *)contentsAtPath:(NSString *)pathInArchive error:(NSError **)error
+{
+    const char *utf8FilePath = [pathInArchive UTF8String];
+    void *fileHandle;
+    
+    if (!SFileOpenFileEx(self.mpq, utf8FilePath, 0, &fileHandle))
+    {
+        *error = [StormArchive lastError];
+        return nil;
+    }
+    
+    NSMutableData *mutableData = [[NSMutableData alloc] init];
+    char buffer[0x10000];
+    unsigned int bytesRead = 1;
+    
+    while (bytesRead > 0)
+    {
+        if (!SFileReadFile(fileHandle, buffer, sizeof(buffer), &bytesRead, nil) && GetLastError() != ERROR_HANDLE_EOF)
+        {
+            *error = [StormArchive lastError];
+            SFileCloseFile(fileHandle);
+            return nil;
+        }
+        
+        [mutableData appendBytes:buffer length:bytesRead];
+    }
+    
+    if (GetLastError() == ERROR_HANDLE_EOF)
+    {
+        SetLastError(ERROR_SUCCESS);
+    }
+    
+    if (!SFileCloseFile(fileHandle))
+    {
+        *error = [StormArchive lastError];
+        return nil;
+    }
+    
+    return mutableData;
+}
+
+#pragma mark - File Info
 
 - (NSData *)fileInfo:(void *)handle infoClass:(SFileInfoClass)infoClass error:(NSError **)error
 {
