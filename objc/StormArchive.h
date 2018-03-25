@@ -18,7 +18,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 - (BOOL)extractFile:(NSString *)pathInArchive pathOnDisk:(NSString *)pathOnDisk error:(NSError **)error;
 
+- (BOOL)removeFile:(NSString *)pathInArchive error:(NSError **)error;
+
+- (BOOL)writeToFile:(NSString *)pathInArchive data:(NSData *)data error:(NSError **)error;
+
 - (NSData *)contentsAtPath:(NSString *)pathInArchive error:(NSError **)error;
+
+- (NSArray<NSDictionary *> *)findFilesMatching:(NSString *)mask error:(NSError **)error;
+
+- (BOOL)compact:(NSError **)error;
 
 - (BOOL)close:(NSError **)error;
 

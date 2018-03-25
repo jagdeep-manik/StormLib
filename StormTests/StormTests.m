@@ -105,4 +105,87 @@
     XCTAssertNil(error);
 }
 
+- (void)testSearch
+{
+    NSError *error = nil;
+    
+    NSArray<NSDictionary *> *searchResults = [self.archive findFilesMatching:@"*.blp" error:&error];
+    XCTAssertNil(error);
+    XCTAssertEqual([searchResults count], 11);
+}
+
+- (void)testWriteRemove
+{
+    NSError *error = nil;
+    NSString *pathInArchive = @"test/testReferenceScript.j";
+    
+    // Write reference file into archive
+    NSString *referencePath = [self.bundle pathForResource:@"testReferenceScript" ofType:@"j"];
+    NSData *contentsOfFile = [[NSFileManager defaultManager] contentsAtPath:referencePath];
+    [self.archive writeToFile:pathInArchive data:contentsOfFile error:&error];
+    XCTAssertNil(error);
+    
+    // Check file exists
+    BOOL fileExists = [self.archive hasFile:pathInArchive error:&error];
+    XCTAssertNil(error);
+    XCTAssertTrue(fileExists);
+    
+    // Extract for correctness test
+    NSString *destinationPath = [NSString stringWithFormat:@"%@/testExtraction.j", self.resourcePath];
+    [self.archive extractFile:pathInArchive pathOnDisk:destinationPath error:&error];
+    XCTAssertNil(error);
+    
+    // Check correctness
+    BOOL filesAreEqual = [self isFile:destinationPath equalTo:referencePath];
+    XCTAssertTrue(filesAreEqual);
+    
+    // Remove file to restore state
+    [self.archive removeFile:pathInArchive error:&error];
+    XCTAssertNil(error);
+    
+    // Remove local file
+    [[NSFileManager defaultManager] removeItemAtPath:destinationPath error:&error];
+    XCTAssertNil(error);
+    
+    // Compact
+    [self.archive compact:&error];
+    XCTAssertNil(error);
+}
+
+- (void)testReplaceExisting
+{
+    NSError *error = nil;
+    
+    // Extract current file
+    NSString *destinationPath = [NSString stringWithFormat:@"%@/testExtraction.j", self.resourcePath];
+    [self.archive extractFile:@"war3map.j" pathOnDisk:destinationPath error:&error];
+    XCTAssertNil(error);
+    
+    // Insert our file
+    NSString *replacementFilePath = [self.bundle pathForResource:@"testReplacementScript" ofType:@"j"];
+    NSData *contentsOfFile = [[NSFileManager defaultManager] contentsAtPath:replacementFilePath];
+    [self.archive writeToFile:@"war3map.j" data:contentsOfFile error:&error];
+    XCTAssertNil(error);
+    
+    // Check correctness
+    NSData *contentsInArchive = [self.archive contentsAtPath:@"war3map.j" error:&error];
+    XCTAssertNil(error);
+    XCTAssertTrue([contentsOfFile isEqualToData:contentsInArchive]);
+    
+    // Replace with our old file
+    NSData *contentsOfOldFile = [[NSFileManager defaultManager] contentsAtPath:destinationPath];
+    [self.archive writeToFile:@"war3map.j" data:contentsOfOldFile error:&error];
+    XCTAssertNil(error);
+    
+    // Compact
+    [self.archive compact:&error];
+    XCTAssertNil(error);
+    
+    // Remove local file
+    [[NSFileManager defaultManager] removeItemAtPath:destinationPath error:&error];
+    XCTAssertNil(error);
+}
+
+
+
 @end
