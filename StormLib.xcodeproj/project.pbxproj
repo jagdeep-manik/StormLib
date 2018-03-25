@@ -488,6 +488,7 @@
 		22F5A9C61193DFBA00F8B121 /* SFileVerify.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22F5A9C41193DFBA00F8B121 /* SFileVerify.cpp */; };
 		9341C7BC2067577100C7986A /* testReplacementScript.j in Resources */ = {isa = PBXBuildFile; fileRef = 9341C7BB2067577000C7986A /* testReplacementScript.j */; };
 		9341C7BE206757ED00C7986A /* (8)AzerothGrandPrix_Original.w3x in Resources */ = {isa = PBXBuildFile; fileRef = 9341C7BD206757ED00C7986A /* (8)AzerothGrandPrix_Original.w3x */; };
+		9341C7C020675C5E00C7986A /* StormTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9341C7BF20675C5E00C7986A /* StormTest.cpp */; };
 		93FA78FF205A472700F29E8A /* StormArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 93FA78FD205A472700F29E8A /* StormArchive.h */; };
 		93FA7900205A472700F29E8A /* StormArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 93FA78FD205A472700F29E8A /* StormArchive.h */; };
 		93FA7901205A472700F29E8A /* StormArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 93FA78FE205A472700F29E8A /* StormArchive.mm */; };
@@ -798,6 +799,7 @@
 		32ED00B70D03542A00AB0B4E /* StormPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StormPort.h; path = src/StormPort.h; sourceTree = "<group>"; };
 		9341C7BB2067577000C7986A /* testReplacementScript.j */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testReplacementScript.j; sourceTree = "<group>"; };
 		9341C7BD206757ED00C7986A /* (8)AzerothGrandPrix_Original.w3x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "(8)AzerothGrandPrix_Original.w3x"; sourceTree = "<group>"; };
+		9341C7BF20675C5E00C7986A /* StormTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = StormTest.cpp; path = test/StormTest.cpp; sourceTree = "<group>"; };
 		93FA78FD205A472700F29E8A /* StormArchive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StormArchive.h; sourceTree = "<group>"; };
 		93FA78FE205A472700F29E8A /* StormArchive.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = StormArchive.mm; sourceTree = "<group>"; };
 		93FA790A205A4B6C00F29E8A /* StormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -878,6 +880,7 @@
 		0867D691FE84028FC02AAC07 /* stormlib */ = {
 			isa = PBXGroup;
 			children = (
+				9341C7BF20675C5E00C7986A /* StormTest.cpp */,
 				32DBEE830D00E58F00DB1E81 /* Source */,
 				2295488711D45A520064B264 /* Test */,
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
@@ -2039,6 +2042,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9341C7C020675C5E00C7986A /* StormTest.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
