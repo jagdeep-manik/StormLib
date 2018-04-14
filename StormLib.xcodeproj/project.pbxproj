@@ -27,8 +27,8 @@
 		225530DB1056BC7900FA646A /* huff.h in Headers */ = {isa = PBXBuildFile; fileRef = 32ED009D0D03542A00AB0B4E /* huff.h */; };
 		225530DE1056BC7900FA646A /* pklib.h in Headers */ = {isa = PBXBuildFile; fileRef = 32ED00A80D03542A00AB0B4E /* pklib.h */; };
 		225530DF1056BC7900FA646A /* StormCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 32ED00AB0D03542A00AB0B4E /* StormCommon.h */; };
-		225530E01056BC7900FA646A /* StormLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 32ED00B60D03542A00AB0B4E /* StormLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		225530E11056BC7900FA646A /* StormPort.h in Headers */ = {isa = PBXBuildFile; fileRef = 32ED00B70D03542A00AB0B4E /* StormPort.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		225530E01056BC7900FA646A /* StormLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 32ED00B60D03542A00AB0B4E /* StormLib.h */; };
+		225530E11056BC7900FA646A /* StormPort.h in Headers */ = {isa = PBXBuildFile; fileRef = 32ED00B70D03542A00AB0B4E /* StormPort.h */; };
 		225530E31056BC8700FA646A /* huff.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32ED009C0D03542A00AB0B4E /* huff.cpp */; };
 		225530E61056BC8700FA646A /* explode.c in Sources */ = {isa = PBXBuildFile; fileRef = 32ED00A60D03542A00AB0B4E /* explode.c */; };
 		225530E71056BC8700FA646A /* implode.c in Sources */ = {isa = PBXBuildFile; fileRef = 32ED00A70D03542A00AB0B4E /* implode.c */; };
@@ -52,8 +52,8 @@
 		225FAC9C0E53BAA100DA2CAE /* huff.h in Headers */ = {isa = PBXBuildFile; fileRef = 32ED009D0D03542A00AB0B4E /* huff.h */; };
 		225FAC9F0E53BAA100DA2CAE /* pklib.h in Headers */ = {isa = PBXBuildFile; fileRef = 32ED00A80D03542A00AB0B4E /* pklib.h */; };
 		225FACA00E53BAA100DA2CAE /* StormCommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 32ED00AB0D03542A00AB0B4E /* StormCommon.h */; };
-		225FACA10E53BAA100DA2CAE /* StormLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 32ED00B60D03542A00AB0B4E /* StormLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		225FACA20E53BAA100DA2CAE /* StormPort.h in Headers */ = {isa = PBXBuildFile; fileRef = 32ED00B70D03542A00AB0B4E /* StormPort.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		225FACA10E53BAA100DA2CAE /* StormLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 32ED00B60D03542A00AB0B4E /* StormLib.h */; };
+		225FACA20E53BAA100DA2CAE /* StormPort.h in Headers */ = {isa = PBXBuildFile; fileRef = 32ED00B70D03542A00AB0B4E /* StormPort.h */; };
 		225FACA50E53BAB400DA2CAE /* huff.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 32ED009C0D03542A00AB0B4E /* huff.cpp */; };
 		225FACA90E53BAB400DA2CAE /* explode.c in Sources */ = {isa = PBXBuildFile; fileRef = 32ED00A60D03542A00AB0B4E /* explode.c */; };
 		225FACAA0E53BAB400DA2CAE /* implode.c in Sources */ = {isa = PBXBuildFile; fileRef = 32ED00A70D03542A00AB0B4E /* implode.c */; };
@@ -489,8 +489,8 @@
 		9341C7BC2067577100C7986A /* testReplacementScript.j in Resources */ = {isa = PBXBuildFile; fileRef = 9341C7BB2067577000C7986A /* testReplacementScript.j */; };
 		9341C7BE206757ED00C7986A /* (8)AzerothGrandPrix_Original.w3x in Resources */ = {isa = PBXBuildFile; fileRef = 9341C7BD206757ED00C7986A /* (8)AzerothGrandPrix_Original.w3x */; };
 		9341C7C020675C5E00C7986A /* StormTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9341C7BF20675C5E00C7986A /* StormTest.cpp */; };
-		93FA78FF205A472700F29E8A /* StormArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 93FA78FD205A472700F29E8A /* StormArchive.h */; };
-		93FA7900205A472700F29E8A /* StormArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 93FA78FD205A472700F29E8A /* StormArchive.h */; };
+		93FA78FF205A472700F29E8A /* StormArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 93FA78FD205A472700F29E8A /* StormArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		93FA7900205A472700F29E8A /* StormArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 93FA78FD205A472700F29E8A /* StormArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		93FA7901205A472700F29E8A /* StormArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 93FA78FE205A472700F29E8A /* StormArchive.mm */; };
 		93FA7902205A472700F29E8A /* StormArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 93FA78FE205A472700F29E8A /* StormArchive.mm */; };
 		93FA790D205A4B6C00F29E8A /* StormTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FA790C205A4B6C00F29E8A /* StormTests.m */; };
@@ -1412,6 +1412,7 @@
 			files = (
 				225FAC9C0E53BAA100DA2CAE /* huff.h in Headers */,
 				225FAC9F0E53BAA100DA2CAE /* pklib.h in Headers */,
+				93FA7900205A472700F29E8A /* StormArchive.h in Headers */,
 				225FACA00E53BAA100DA2CAE /* StormCommon.h in Headers */,
 				225FACA10E53BAA100DA2CAE /* StormLib.h in Headers */,
 				225FACA20E53BAA100DA2CAE /* StormPort.h in Headers */,
@@ -1430,7 +1431,6 @@
 				22C918CF11933FCF0083AC69 /* tomcrypt_hash.h in Headers */,
 				22C918D011933FCF0083AC69 /* tomcrypt_mac.h in Headers */,
 				22C918D111933FCF0083AC69 /* tomcrypt_macros.h in Headers */,
-				93FA7900205A472700F29E8A /* StormArchive.h in Headers */,
 				22C918D211933FCF0083AC69 /* tomcrypt_math.h in Headers */,
 				22C918D311933FCF0083AC69 /* tomcrypt_misc.h in Headers */,
 				22C918D411933FCF0083AC69 /* tomcrypt_pk.h in Headers */,
@@ -1523,7 +1523,7 @@
 		0867D690FE84028FC02AAC07 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				TargetAttributes = {
 					93FA7909205A4B6C00F29E8A = {
 						CreatedOnToolsVersion = 9.2;
@@ -2079,11 +2079,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -2125,11 +2127,13 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
@@ -2164,6 +2168,10 @@
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_VERSION = "";
 				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_NAME = StormLib;
 			};
 			name = Debug;
@@ -2174,6 +2182,10 @@
 				COPY_PHASE_STRIP = YES;
 				GCC_VERSION = "";
 				INSTALL_PATH = /usr/local/lib;
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_NAME = StormLib;
 			};
 			name = Release;
@@ -2182,14 +2194,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				EXPORTED_SYMBOLS_FILE = "$(PROJECT_DIR)/stormlib_dll/StormLib.exp";
+				EXPORTED_SYMBOLS_FILE = "";
 				FRAMEWORK_VERSION = A;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.zezula.${PRODUCT_NAME:rfc1034Identifier}";
 				PRODUCT_NAME = StormLib;
+				SKIP_INSTALL = NO;
 			};
 			name = Debug;
 		};
@@ -2197,13 +2214,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
-				EXPORTED_SYMBOLS_FILE = "$(PROJECT_DIR)/stormlib_dll/StormLib.exp";
+				EXPORTED_SYMBOLS_FILE = "";
 				FRAMEWORK_VERSION = A;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				INSTALL_PATH = "@executable_path/../Frameworks";
+				OTHER_LDFLAGS = (
+					"-lc++",
+					"-ObjC",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "net.zezula.${PRODUCT_NAME:rfc1034Identifier}";
 				PRODUCT_NAME = StormLib;
+				SKIP_INSTALL = NO;
 			};
 			name = Release;
 		};

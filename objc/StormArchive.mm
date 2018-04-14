@@ -6,7 +6,7 @@
 //
 
 #import "StormArchive.h"
-
+#import "StormLib.h"
 
 #pragma mark - Private Properties
 
@@ -28,7 +28,6 @@
     
     if (!SFileOpenArchive(utf8Path, 0, flags, &handle))
     {
-        
         *error = [StormArchive lastError];
         return nil;
     }
