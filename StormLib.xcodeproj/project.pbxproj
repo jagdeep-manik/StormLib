@@ -78,9 +78,6 @@
 		226C7CAE1857DEEB00AB689C /* SFileGetFileInfo.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 226C7CAC1857DEEB00AB689C /* SFileGetFileInfo.cpp */; };
 		228B538411BF7D0D001A58DA /* FileStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 228B538311BF7D0D001A58DA /* FileStream.cpp */; };
 		228B538511BF7D0D001A58DA /* FileStream.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 228B538311BF7D0D001A58DA /* FileStream.cpp */; };
-		22954AD311D463B50064B264 /* libStormLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 225530D41056BAC800FA646A /* libStormLib.a */; };
-		22954AD611D463BE0064B264 /* libbz2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D20A8A0CF3902D00230E7A /* libbz2.dylib */; };
-		22954AD711D463BE0064B264 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 32D20A8B0CF3902D00230E7A /* libz.dylib */; };
 		2299D9D71167EFA8005C19BF /* adpcm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2299D9D51167EFA8005C19BF /* adpcm.cpp */; };
 		2299D9D81167EFA8005C19BF /* adpcm.h in Headers */ = {isa = PBXBuildFile; fileRef = 2299D9D61167EFA8005C19BF /* adpcm.h */; };
 		2299D9D91167EFA8005C19BF /* adpcm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2299D9D51167EFA8005C19BF /* adpcm.cpp */; };
@@ -488,11 +485,10 @@
 		22F5A9C61193DFBA00F8B121 /* SFileVerify.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 22F5A9C41193DFBA00F8B121 /* SFileVerify.cpp */; };
 		9341C7BC2067577100C7986A /* testReplacementScript.j in Resources */ = {isa = PBXBuildFile; fileRef = 9341C7BB2067577000C7986A /* testReplacementScript.j */; };
 		9341C7BE206757ED00C7986A /* (8)AzerothGrandPrix_Original.w3x in Resources */ = {isa = PBXBuildFile; fileRef = 9341C7BD206757ED00C7986A /* (8)AzerothGrandPrix_Original.w3x */; };
-		9341C7C020675C5E00C7986A /* StormTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9341C7BF20675C5E00C7986A /* StormTest.cpp */; };
-		93FA78FF205A472700F29E8A /* StormArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 93FA78FD205A472700F29E8A /* StormArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93FA7900205A472700F29E8A /* StormArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 93FA78FD205A472700F29E8A /* StormArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		93FA7901205A472700F29E8A /* StormArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 93FA78FE205A472700F29E8A /* StormArchive.mm */; };
-		93FA7902205A472700F29E8A /* StormArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 93FA78FE205A472700F29E8A /* StormArchive.mm */; };
+		939E365520829644006736D3 /* StormArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 939E365320829644006736D3 /* StormArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		939E365620829644006736D3 /* StormArchive.h in Headers */ = {isa = PBXBuildFile; fileRef = 939E365320829644006736D3 /* StormArchive.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		939E365720829644006736D3 /* StormArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 939E365420829644006736D3 /* StormArchive.mm */; };
+		939E365820829644006736D3 /* StormArchive.mm in Sources */ = {isa = PBXBuildFile; fileRef = 939E365420829644006736D3 /* StormArchive.mm */; };
 		93FA790D205A4B6C00F29E8A /* StormTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 93FA790C205A4B6C00F29E8A /* StormTests.m */; };
 		93FA790F205A4B6C00F29E8A /* libStormLib.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 225530D41056BAC800FA646A /* libStormLib.a */; };
 		93FA7919205A4BD800F29E8A /* (8)AzerothGrandPrix.w3x in Resources */ = {isa = PBXBuildFile; fileRef = 93FA7918205A4BD800F29E8A /* (8)AzerothGrandPrix.w3x */; };
@@ -536,13 +532,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		2229F62E11D4653600118914 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 225530D31056BAC800FA646A;
-			remoteInfo = StormLib;
-		};
 		93FA7910205A4B6C00F29E8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
@@ -561,7 +550,6 @@
 		221F6AB41168545B0026C852 /* LzFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LzFind.h; path = C/LzFind.h; sourceTree = "<group>"; };
 		221F6AB9116854730026C852 /* LzHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LzHash.h; path = C/LzHash.h; sourceTree = "<group>"; };
 		221F6ABC116854870026C852 /* Types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Types.h; path = C/Types.h; sourceTree = "<group>"; };
-		2253A19F10568A83001909F9 /* StormLib.exp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.exports; name = StormLib.exp; path = stormlib_dll/StormLib.exp; sourceTree = "<group>"; };
 		225530D41056BAC800FA646A /* libStormLib.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libStormLib.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		225C734B1257CCC70009E8DA /* lookup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lookup.h; sourceTree = "<group>"; };
 		225C734C1257CCC70009E8DA /* lookup3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = lookup3.c; sourceTree = "<group>"; };
@@ -572,7 +560,6 @@
 		226C7CA91857DEAC00AB689C /* SBaseSubTypes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SBaseSubTypes.cpp; path = src/SBaseSubTypes.cpp; sourceTree = "<group>"; };
 		226C7CAC1857DEEB00AB689C /* SFileGetFileInfo.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = SFileGetFileInfo.cpp; path = src/SFileGetFileInfo.cpp; sourceTree = "<group>"; };
 		228B538311BF7D0D001A58DA /* FileStream.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = FileStream.cpp; path = src/FileStream.cpp; sourceTree = "<group>"; };
-		22954ACE11D463A30064B264 /* StormLib_Test */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = StormLib_Test; sourceTree = BUILT_PRODUCTS_DIR; };
 		2299D9D51167EFA8005C19BF /* adpcm.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = adpcm.cpp; sourceTree = "<group>"; };
 		2299D9D61167EFA8005C19BF /* adpcm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = adpcm.h; sourceTree = "<group>"; };
 		2299D9DC1167EFC6005C19BF /* sparse.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = sparse.cpp; sourceTree = "<group>"; };
@@ -799,9 +786,8 @@
 		32ED00B70D03542A00AB0B4E /* StormPort.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = StormPort.h; path = src/StormPort.h; sourceTree = "<group>"; };
 		9341C7BB2067577000C7986A /* testReplacementScript.j */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = testReplacementScript.j; sourceTree = "<group>"; };
 		9341C7BD206757ED00C7986A /* (8)AzerothGrandPrix_Original.w3x */ = {isa = PBXFileReference; lastKnownFileType = file; path = "(8)AzerothGrandPrix_Original.w3x"; sourceTree = "<group>"; };
-		9341C7BF20675C5E00C7986A /* StormTest.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = StormTest.cpp; path = test/StormTest.cpp; sourceTree = "<group>"; };
-		93FA78FD205A472700F29E8A /* StormArchive.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StormArchive.h; sourceTree = "<group>"; };
-		93FA78FE205A472700F29E8A /* StormArchive.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = StormArchive.mm; sourceTree = "<group>"; };
+		939E365320829644006736D3 /* StormArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StormArchive.h; sourceTree = "<group>"; };
+		939E365420829644006736D3 /* StormArchive.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StormArchive.mm; sourceTree = "<group>"; };
 		93FA790A205A4B6C00F29E8A /* StormTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StormTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		93FA790C205A4B6C00F29E8A /* StormTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = StormTests.m; sourceTree = "<group>"; };
 		93FA790E205A4B6C00F29E8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -843,16 +829,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22954ACC11D463A30064B264 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				22954AD611D463BE0064B264 /* libbz2.dylib in Frameworks */,
-				22954AD711D463BE0064B264 /* libz.dylib in Frameworks */,
-				22954AD311D463B50064B264 /* libStormLib.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		93FA7907205A4B6C00F29E8A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -871,7 +847,6 @@
 			children = (
 				225FAC940E53B7F800DA2CAE /* StormLib.framework */,
 				225530D41056BAC800FA646A /* libStormLib.a */,
-				22954ACE11D463A30064B264 /* StormLib_Test */,
 				93FA790A205A4B6C00F29E8A /* StormTests.xctest */,
 			);
 			name = Products;
@@ -880,15 +855,11 @@
 		0867D691FE84028FC02AAC07 /* stormlib */ = {
 			isa = PBXGroup;
 			children = (
-				9341C7BF20675C5E00C7986A /* StormTest.cpp */,
 				32DBEE830D00E58F00DB1E81 /* Source */,
-				2295488711D45A520064B264 /* Test */,
 				0867D69AFE84028FC02AAC07 /* External Frameworks and Libraries */,
 				22B54B321054B287001D6436 /* Resources */,
 				93FA790B205A4B6C00F29E8A /* StormTests */,
 				034768DDFF38A45A11DB9C8B /* Products */,
-				2253A19F10568A83001909F9 /* StormLib.exp */,
-				93FA791A205A57B700F29E8A /* Frameworks */,
 			);
 			name = stormlib;
 			sourceTree = "<group>";
@@ -926,13 +897,6 @@
 			);
 			name = jenkins;
 			path = src/jenkins;
-			sourceTree = "<group>";
-		};
-		2295488711D45A520064B264 /* Test */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Test;
 			sourceTree = "<group>";
 		};
 		2299D9D41167EFA8005C19BF /* adpcm */ = {
@@ -1279,6 +1243,7 @@
 				221F652D116851D70026C852 /* lzma */,
 				32ED00A40D03542A00AB0B4E /* pklib */,
 				2299D9DB1167EFC6005C19BF /* sparse */,
+				939E365220829644006736D3 /* objc */,
 				228B538311BF7D0D001A58DA /* FileStream.cpp */,
 				22EC6043154B28A000679228 /* FileStream.h */,
 				32ED00AA0D03542A00AB0B4E /* SBaseCommon.cpp */,
@@ -1302,7 +1267,6 @@
 				32ED00AB0D03542A00AB0B4E /* StormCommon.h */,
 				32ED00B60D03542A00AB0B4E /* StormLib.h */,
 				32ED00B70D03542A00AB0B4E /* StormPort.h */,
-				93FA78F6205A46D600F29E8A /* objc */,
 			);
 			name = Source;
 			sourceTree = "<group>";
@@ -1328,13 +1292,14 @@
 			path = src/pklib;
 			sourceTree = "<group>";
 		};
-		93FA78F6205A46D600F29E8A /* objc */ = {
+		939E365220829644006736D3 /* objc */ = {
 			isa = PBXGroup;
 			children = (
-				93FA78FD205A472700F29E8A /* StormArchive.h */,
-				93FA78FE205A472700F29E8A /* StormArchive.mm */,
+				939E365320829644006736D3 /* StormArchive.h */,
+				939E365420829644006736D3 /* StormArchive.mm */,
 			);
-			path = objc;
+			name = objc;
+			path = src/objc;
 			sourceTree = "<group>";
 		};
 		93FA790B205A4B6C00F29E8A /* StormTests */ = {
@@ -1356,13 +1321,6 @@
 				9341C7BB2067577000C7986A /* testReplacementScript.j */,
 			);
 			path = Resources;
-			sourceTree = "<group>";
-		};
-		93FA791A205A57B700F29E8A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -1392,7 +1350,7 @@
 				22C9188511933FCF0083AC69 /* tomcrypt_hash.h in Headers */,
 				22C9188611933FCF0083AC69 /* tomcrypt_mac.h in Headers */,
 				22C9188711933FCF0083AC69 /* tomcrypt_macros.h in Headers */,
-				93FA78FF205A472700F29E8A /* StormArchive.h in Headers */,
+				939E365520829644006736D3 /* StormArchive.h in Headers */,
 				22C9188811933FCF0083AC69 /* tomcrypt_math.h in Headers */,
 				22C9188911933FCF0083AC69 /* tomcrypt_misc.h in Headers */,
 				22C9188A11933FCF0083AC69 /* tomcrypt_pk.h in Headers */,
@@ -1412,7 +1370,6 @@
 			files = (
 				225FAC9C0E53BAA100DA2CAE /* huff.h in Headers */,
 				225FAC9F0E53BAA100DA2CAE /* pklib.h in Headers */,
-				93FA7900205A472700F29E8A /* StormArchive.h in Headers */,
 				225FACA00E53BAA100DA2CAE /* StormCommon.h in Headers */,
 				225FACA10E53BAA100DA2CAE /* StormLib.h in Headers */,
 				225FACA20E53BAA100DA2CAE /* StormPort.h in Headers */,
@@ -1431,6 +1388,7 @@
 				22C918CF11933FCF0083AC69 /* tomcrypt_hash.h in Headers */,
 				22C918D011933FCF0083AC69 /* tomcrypt_mac.h in Headers */,
 				22C918D111933FCF0083AC69 /* tomcrypt_macros.h in Headers */,
+				939E365620829644006736D3 /* StormArchive.h in Headers */,
 				22C918D211933FCF0083AC69 /* tomcrypt_math.h in Headers */,
 				22C918D311933FCF0083AC69 /* tomcrypt_misc.h in Headers */,
 				22C918D411933FCF0083AC69 /* tomcrypt_pk.h in Headers */,
@@ -1482,23 +1440,6 @@
 			productReference = 225FAC940E53B7F800DA2CAE /* StormLib.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		22954ACD11D463A30064B264 /* StormLib_Test */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 22954AD911D463E00064B264 /* Build configuration list for PBXNativeTarget "StormLib_Test" */;
-			buildPhases = (
-				22954ACB11D463A30064B264 /* Sources */,
-				22954ACC11D463A30064B264 /* Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				2229F62F11D4653600118914 /* PBXTargetDependency */,
-			);
-			name = StormLib_Test;
-			productName = StormLib_Test;
-			productReference = 22954ACE11D463A30064B264 /* StormLib_Test */;
-			productType = "com.apple.product-type.tool";
-		};
 		93FA7909205A4B6C00F29E8A /* StormTests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 93FA7912205A4B6C00F29E8A /* Build configuration list for PBXNativeTarget "StormTests" */;
@@ -1546,7 +1487,6 @@
 			targets = (
 				225530D31056BAC800FA646A /* StormLib */,
 				225FAC930E53B7F800DA2CAE /* StormLibFramework */,
-				22954ACD11D463A30064B264 /* StormLib_Test */,
 				93FA7909205A4B6C00F29E8A /* StormTests */,
 			);
 		};
@@ -1637,7 +1577,6 @@
 				22C918AA11933FCF0083AC69 /* der_decode_utf8_string.c in Sources */,
 				E60816F01B707B7200B283F7 /* der_encode_boolean.c in Sources */,
 				22C918AB11933FCF0083AC69 /* der_length_bit_string.c in Sources */,
-				93FA7901205A472700F29E8A /* StormArchive.mm in Sources */,
 				22C918AC11933FCF0083AC69 /* der_length_boolean.c in Sources */,
 				22C918AD11933FCF0083AC69 /* der_length_ia5_string.c in Sources */,
 				22C918AE11933FCF0083AC69 /* der_length_integer.c in Sources */,
@@ -1686,6 +1625,7 @@
 				22C9199A1193400A0083AC69 /* bn_mp_cmp.c in Sources */,
 				22C9199B1193400A0083AC69 /* bn_mp_cnt_lsb.c in Sources */,
 				22C9199C1193400A0083AC69 /* bn_mp_copy.c in Sources */,
+				939E365720829644006736D3 /* StormArchive.mm in Sources */,
 				22C9199D1193400A0083AC69 /* bn_mp_count_bits.c in Sources */,
 				E60816F41B707B7200B283F7 /* der_encode_integer.c in Sources */,
 				E60817061B707B7200B283F7 /* der_encode_utf8_string.c in Sources */,
@@ -1869,7 +1809,6 @@
 				22C918F411933FCF0083AC69 /* der_decode_utf8_string.c in Sources */,
 				E60816F11B707B7200B283F7 /* der_encode_boolean.c in Sources */,
 				22C918F511933FCF0083AC69 /* der_length_bit_string.c in Sources */,
-				93FA7902205A472700F29E8A /* StormArchive.mm in Sources */,
 				22C918F611933FCF0083AC69 /* der_length_boolean.c in Sources */,
 				22C918F711933FCF0083AC69 /* der_length_ia5_string.c in Sources */,
 				22C918F811933FCF0083AC69 /* der_length_integer.c in Sources */,
@@ -1918,6 +1857,7 @@
 				22C91A131193400A0083AC69 /* bn_mp_cmp.c in Sources */,
 				22C91A141193400A0083AC69 /* bn_mp_cnt_lsb.c in Sources */,
 				22C91A151193400A0083AC69 /* bn_mp_copy.c in Sources */,
+				939E365820829644006736D3 /* StormArchive.mm in Sources */,
 				22C91A161193400A0083AC69 /* bn_mp_count_bits.c in Sources */,
 				E60816F51B707B7200B283F7 /* der_encode_integer.c in Sources */,
 				E60817071B707B7200B283F7 /* der_encode_utf8_string.c in Sources */,
@@ -2038,14 +1978,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		22954ACB11D463A30064B264 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9341C7C020675C5E00C7986A /* StormTest.cpp in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		93FA7906205A4B6C00F29E8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -2057,11 +1989,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2229F62F11D4653600118914 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 225530D31056BAC800FA646A /* StormLib */;
-			targetProxy = 2229F62E11D4653600118914 /* PBXContainerItemProxy */;
-		};
 		93FA7911205A4B6C00F29E8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 225530D31056BAC800FA646A /* StormLib */;
@@ -2229,38 +2156,6 @@
 			};
 			name = Release;
 		};
-		22954AD011D463A40064B264 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = NO;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = (
-					_7ZIP_ST,
-					_DEBUG,
-					__STORMLIB_TEST__,
-				);
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = /usr/local/bin;
-				OTHER_LDFLAGS = "-lc++";
-				PRODUCT_NAME = StormLib_Test;
-			};
-			name = Debug;
-		};
-		22954AD111D463A40064B264 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
-				INSTALL_PATH = /usr/local/bin;
-				OTHER_LDFLAGS = "-lc++";
-				PRODUCT_NAME = StormLib_Test;
-			};
-			name = Release;
-		};
 		93FA7913205A4B6C00F29E8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -2354,15 +2249,6 @@
 			buildConfigurations = (
 				225FAC960E53B7F900DA2CAE /* Debug */,
 				225FAC970E53B7F900DA2CAE /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Debug;
-		};
-		22954AD911D463E00064B264 /* Build configuration list for PBXNativeTarget "StormLib_Test" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				22954AD011D463A40064B264 /* Debug */,
-				22954AD111D463A40064B264 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;
